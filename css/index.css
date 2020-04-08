@@ -219,12 +219,26 @@ img {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
   background: #FFEBCD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer form input {
+  text-align: center;
+  color: red;
 }
 .home .intro {
   padding: 90px 0 10px;
