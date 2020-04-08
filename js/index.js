@@ -102,3 +102,14 @@ document.addEventListener("dragenter", function(event) {
       event.target.appendChild(document.getElementById("sunDrop"));
     }
   });
+
+  //event propagation 
+  const divProp = document.querySelector('.destination')
+
+  const btnProp = document.querySelector('.btn');
+  btnProp.addEventListener('click', () => {
+      return
+  }) 
+
+
+  //event defaults
