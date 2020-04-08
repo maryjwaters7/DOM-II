@@ -58,9 +58,47 @@ blurEmailInput.addEventListener('blur', () => {
 });
 
 
-//scroll event - change font color on scroll
+//scroll event - change font color on first paragraph on scroll
 const scrollColor = document.querySelector('p');
 document.addEventListener('scroll', () => {
     return scrollColor.style.color = "blue";
 });
 
+
+//keydown event - alert pop up
+document.addEventListener('keydown', () => {
+    return alert('You Pressed A Button!')
+});
+
+
+//drag and drop event
+const dragSun = document.querySelector('#sunDrop');
+dragSun.addEventListener('drag', () => {
+    return dragSun.style.color = 'red';
+});
+
+document.addEventListener("dragenter", function(event) {
+    if ( event.target.className == "droptarget" ) {
+      event.target.style.border = "3px dotted orange";
+    }
+  });
+
+  document.addEventListener("dragover", function(event) {
+    event.preventDefault();
+  });
+
+  document.addEventListener("dragleave", function(event) {
+    if ( event.target.className == "droptarget" ) {
+      event.target.style.border = "";
+    }
+  });
+
+  document.addEventListener("drop", function(event) {
+    event.preventDefault();
+    if ( event.target.className == "droptarget" ) {
+      document.getElementById("sunDrop").style.color = "";
+      event.target.style.border = "";
+      var data = event.dataTransfer.getData("Text");
+      event.target.appendChild(document.getElementById("sunDrop"));
+    }
+  });

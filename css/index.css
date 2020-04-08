@@ -199,6 +199,9 @@ img {
     font-size: 3rem;
   }
 }
+.main-navigation .nav-container #sunDrop {
+  font-size: 55px;
+}
 .main-navigation .nav-container .nav {
   width: 350px;
   display: flex;
@@ -214,6 +217,12 @@ img {
   font-size: 1.6rem;
   color: #212529;
   text-decoration: none;
+}
+.main-navigation .nav-container .droptarget {
+  width: 75px;
+  height: 75px;
+  font-size: 2rem;
+  border: 1px dotted blue;
 }
 .footer {
   width: 100%;
